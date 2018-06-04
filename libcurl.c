@@ -20,7 +20,7 @@ int main(void)
     curl_easy_setopt(curl, CURLOPT_URL, "http://127.0.0.1/report/v1/affiliate/transaction/");
     curl_easy_setopt(curl, CURLOPT_HTTPGET, 1L);
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
-    curl_easy_setopt(curl, CURLOPT_USERAGENT, "curl/7.42.0");
+    curl_easy_setopt(curl, CURLOPT_USERAGENT, "curl/7.29.0");
     res = curl_easy_perform(curl);
 
     if(res != CURLE_OK) {
